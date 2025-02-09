@@ -1,0 +1,105 @@
+@media screen and (max-width: 1015px) {
+    .header__search {
+       display: none !important; 
+      width: auto !important;
+      display: none;
+    }
+  
+    * .header__login .subscribe {
+      font-size: 12px !important;
+      padding: 10px !important;
+      margin-right: 5px !important;
+    } 
+  
+    * .offer__list-item {
+      grid-template-columns: 1fr 1fr !important;
+    } 
+  }
+  
+  @media screen and (min-width: 1016px) and (max-width: 1140px) {
+    .header__search {
+      display: none !important; 
+      width: auto !important;
+      display: none;
+    }
+  
+    .offer__list-item {
+      grid-template-columns: 1fr 1fr 1fr !important;
+    } 
+  }
+  
+  @media screen and (max-width: 375px) {
+    .playlist {
+      display: none;
+    }
+  
+    .playlist-container {
+      width: 100%; /* Ocupa toda a largura disponível */
+      height: auto; /* Altura automática, ajusta conforme o conteúdo */
+    }
+  
+    .sidebar {
+      width: 342px;
+    }
+  
+    .offer__list-item {
+      grid-template-columns: 1fr;
+    }
+  
+    .offer__scroll-container {
+      overflow-y: visible;
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+        overflow: hidden;
+    }
+    .sidebar .logo img {
+        width: 40px;
+    }
+    .sidebar ul span {
+        display: none;
+    }
+    .library {
+        display: none;
+    }
+    .main-container {
+        margin-left: 70px;
+    }
+    .header__search input {
+        width: 150px;
+    }
+    .offer__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+/* Para celulares (480px ou menos) */
+@media (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
+    .main-container {
+        margin-left: 0;
+    }
+    .header__navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__search {
+        width: 100%;
+        justify-content: center;
+    }
+    .offer__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .disclaimer-premium {
+        text-align: center;
+        padding: 10px;
+    }
+}
